@@ -13,7 +13,7 @@ int main(void)
 		for (e = k + 1; e <= 99; e++)
 		{
 			putchar((k / 10) + '0');
-			putchar((k / 10) + '0');
+			putchar((k % 10) + '0');
 			putchar(' ');
 			putchar((e / 10) + '0');
 			putchar((e % 10) + '0');
