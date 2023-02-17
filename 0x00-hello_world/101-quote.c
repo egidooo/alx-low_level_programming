@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
- * main - printing the line with putchar function
- * Return: program returns to 0
+ * main - program that prints the line with fput function
+ * Return: program returns to 1
  */
 int main(void)
 {
-	putchar("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
-	return (0);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
