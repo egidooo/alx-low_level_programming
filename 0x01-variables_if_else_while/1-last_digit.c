@@ -5,6 +5,7 @@
  * main - program that check if number is greater or less to 5
  * Return: program return to 0
  */
+
 int main(void)
 {
 	int n, lstd;
