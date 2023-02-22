@@ -10,7 +10,7 @@ int main(void)
 	int m = 0;
 	long n = 1, o = 2, sum = o;
 
-	while (0 + n < 4000000)
+	while (o + n < 4000000)
 	{
 	o += n;
 	if (o % 2 == 0)
