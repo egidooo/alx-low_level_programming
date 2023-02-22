@@ -8,11 +8,11 @@ int main(void)
 {
 	int p, k = 0;
 
-	while (p < 2024)
+	while (p < 1024)
 	{
 		if ((p % 3 == 0) || (p % 5 == 0))
 		{
-			k = k + 1;
+			k = k + p;
 		}
 	p++;
 	}
