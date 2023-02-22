@@ -13,7 +13,7 @@ int main(void)
 
 	for (c = 1; c <= (k / 2); c++)
 	{
-		printf("%li %li ", a, b);
+		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
 	}
