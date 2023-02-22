@@ -17,7 +17,7 @@ int main(void)
 	sum += o;
 	n = o - n;
 	++m;
-	printf("%ld\n", sum);
 	}
+	printf("%ld\n", sum);
 	return (0);
 }
