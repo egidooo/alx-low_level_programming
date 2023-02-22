@@ -6,21 +6,24 @@
 
 int main(void)
 {
-	int c;
-	int k = 50;
-	long a = 1;
-	long b = 2;
 
-	for (c = 1; c <= (k / 2); c++)
+	int m = 0;
+	long n = 1, o = 2;
+
+	while (m < 50)
 	{
-		printf("%li, %li, ", a, b);
-		a += b;
-		b += a;
+	if (m == 0)
+	printf("%ld", n);
+	else if (m == 1)
+	printf(", %ld", o);
+	else
+	{
+	o +=  n;
+	n = o - n;
+	printf(", %ld", o);
 	}
-	if (k % 2 == 1)
-		printf("%li", a);
-
+	++m;
+	}
 	printf("\n");
-
 	return (0);
 }
