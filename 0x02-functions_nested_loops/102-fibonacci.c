@@ -16,7 +16,7 @@ int main(void)
 	else if (l == 1)
 	printf(", %ld", n);
 	else
-	{	
+	{
 	n = n + r;
 	r = n - r;
 	printf(", %ld", n);
