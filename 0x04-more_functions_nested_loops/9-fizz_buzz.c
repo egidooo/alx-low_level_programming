@@ -12,19 +12,23 @@ int main(void)
 	{
 		if ((e % 3 == 0) && (e % 5 == 0))
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (e % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else if (e % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else
 		{
-			printf("%d ", e);
+			printf("%d", e);
+		}
+		if (e != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
