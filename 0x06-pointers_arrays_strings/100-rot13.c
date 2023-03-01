@@ -7,19 +7,22 @@
 
 char *rot13(char *str)
 {
-	char *p = str;
+	int i;
+	int j;
+	char tp1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYAabcdefghijklmnopqrstuvwxyz";
+	char tp2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (*p)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (*p >= 'A' && *p <= 'Z')
+		for (j = 0; j < 52; j++)
 		{
-			*p = ((*p - 'A') + 13) % 26 + 'A';
+			if (str[i] == tp1[j])
+			{
+				str[i] = tp2[j];
+				break;
+			}
 		}
-		else if (*p >= 'a' && *p <= 'z')
-		{
-			*p = ((*p - 'a') + 13) % 26 + 'a';
-		}
-		p++;
-		return (str);
+
 	}
+	return (str);
 }
