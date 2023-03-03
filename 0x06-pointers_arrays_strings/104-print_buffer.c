@@ -14,7 +14,6 @@ void print_buffer(char *b, int size)
 	int p;
 	int j;
 	int k;
-	int n;
 
 	p = 0;
 
@@ -25,7 +24,7 @@ void print_buffer(char *b, int size)
 	}
 	while (p < size)
 	{
-		j = size - 0 < 10 ? size - 0 : 10;
+		j = size - p < 10 ? size - p : 10;
 		printf("%08x: ", p);
 		for (k = 0; k < 10; k++)
 		{
@@ -40,7 +39,7 @@ void print_buffer(char *b, int size)
 		}
 		for (k = 0; k < j; k++)
 		{
-			n = *(b + p + k);
+			int n = *(b + p + k);
 
 			if (n < 32 || n > 132)
 			{
