@@ -7,11 +7,11 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i,j,p;
+	unsigned int i, j, p;
 
 	p = 0;
 
-	for (i = 0; s[i] != '\0'; i ++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
 		{
