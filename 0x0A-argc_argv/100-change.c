@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * main -  program that prints the minimum number of coins to
+ * _atoi -  program that prints the minimum number of coins to
  *  make change for an amount of money
  * @argc: number of arguments
  * @argv: pointer
  * Return: exactly 1 and 0 otherwise
  */
 
-int main(int argc, char *argv[])
+int _atoi(int argc, char *argv[])
 {
 	int cents, coins = 0;
 
