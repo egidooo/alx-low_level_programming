@@ -12,12 +12,14 @@
 char *argstostr(int ac, char **av)
 {
 	int p;
+	int i;
 	int k;
 	int length;
 	char *str;
 
 	length = 0;
 	p = 0;
+	i = 0;
 
 	if (ac == 0 || av == 0)
 	{
