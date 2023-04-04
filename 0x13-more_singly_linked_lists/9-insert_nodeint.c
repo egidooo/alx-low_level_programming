@@ -5,7 +5,7 @@
  * at a given position
  * @head: pointer to first node
  * @idx: index of the new added node
- * @n: new node
+ * @n: new node in the list
  * Return: new node or NULL
  */
 
