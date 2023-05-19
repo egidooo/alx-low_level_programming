@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_slistint - function that prints all,
+ * print_dlistint - function that prints all,
  * elements of dlistint list
  * @h: pointer
  * Return: number of nodes
