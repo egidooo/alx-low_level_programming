@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * int delete_dnodeint_at_index - function that delete the node
+ * delete_dnodeint_at_index - function that delete the node
  * @head: pointer to pointer
  * @index: index
  * Return: 1 if success -1 if fails
